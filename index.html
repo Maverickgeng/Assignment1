@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    
 </head>
 <!DOCTYPE html>
 <html>
@@ -12,40 +14,286 @@
 		<meta charset="UTF-8">
 		<title>HTML</title>
 		<style type="text/css">
-			h2{background-color:#6b1702;color: white ;text-align: center;padding: 10px;font-weight: bold;}
+			h2{background-color:#7b0f07;color: white ;text-align: center;padding: 30px;font-weight: bold;}
+            
 			.note{font-style: italic;font-weight: bold;}
-			p,li{text-indent: 2em;line-height: 1.5em;}
-			div{padding: 20px,10px;}
+		
+			div{padding: 50px,50px;}
 		</style>
+     
+<style>
+    body{
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+    }
+</style>
+<style>
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        height: 800px; 
+        margin: 0;
+    }
+    .image {
+        width: 1500px;
+        height: 800px;
+            }
+</style>
+<meta charset="UTF-8">
 
-        <style> .container { display: flex; justify-content: center; align-items: center; height: 100vh; 
-            margin: 0; } .image { max-width: 100%; max-height: 100%; transform: scale(1.5);} </style>
-      
+<style>
+    a {
+        @font-face {
+        font-family: "MyCustomFont";
+        src: url('font1.otf') format('opentype');
+    }
+
+        
+        color: rgba(195, 198, 26, 0.987); 
+        font-size: 50px;
+        text-decoration: none; 
+    }
+
+    a:hover {
+        color: rgb(212, 6, 6);
+    }
+
+    .special-link {
+        position: relative; 
+        top: 50px;
+        left: 200px;
+    }
+</style>
+
+<style>
+    @font-face {
+        font-family: 'LinkFont';
+        src: url('font1.otf') format('opentype');
+    }
+
+    @font-face {
+        font-family: 'TitleFont';
+        src: url('font2.otf') format('opentype');
+    }
+
+    @font-face {
+        font-family: 'TextFont';
+        src: url('font5.ttf') format('opentype');
+    }
+
+    a {
+        font-family: 'LinkFont', sans-serif;
+        
+    }
+
+    h2 {
+        font-family: 'TitleFont', sans-serif;
+        color: #f3e5b2;
+        font-size: 30px;
+    }
+
+    p {
+        font-family: 'TextFont', sans-serif;
+        color: rgb(255, 255, 255);
+        font-size: 20px;
+    }
+    
+</style>
+
+<style>
+    /* 设置外围容器样式 */
+    .links-container {
+        display: flex;
+        justify-content: space-between; /* 使元素分散对齐 */
+        padding: 20px; /* 添加一些内边距 */
+    }
+
+    .center-link {
+        margin-right: auto; /* 推动所有剩余空间到右边，使得该元素居中 */
+        margin-left: auto;
+    }
+
+    .right-link {
+        justify-self: flex-end; /* 对齐到容器的末端 */
+    }
+</style>
+
+<style>
+    /* 通用样式，所有段落共享 */
+    .custom-paragraph {
+        background-size: contain; /* 覆盖整个段落 */
+        background-repeat: no-repeat; /* 不重复背景图 */
+        margin-bottom: 10px; /* 段落间留有空隙 */
+        color: white; /* 为了可读性，假设背景较暗 */
+    }
+
+    /* 为每个段落设置特定的背景图和内边距 */
+    .p1 { background-position: left center; background-image: url('1.png'); padding: 100px; }
+    .p2 { background-position: right center; background-image: url('2.png'); padding: 20px; }
+    .p3 { background-position: left center; background-image: url('3.png'); padding: 200px; }
+    .p4 { background-position: right center; background-image: url('4.png'); padding: 200px; }
+    .p5 { background-position: left center; background-image: url('5.png'); padding: 200px; }
+    .p6 { background-position: right center; background-image: url('image6.jpg'); padding: 20px; }
+    .p7 { background-position: left center;; background-image: url('image7.jpg'); padding: 20px; }
+    .p8 { background-position: right center; background-image: url('image8.jpg'); padding: 20px; }
+    .p9 { background-position: left center; background-image: url('image9.jpg'); padding: 20px; }
+    .p10 { background-position: right center; background-image: url('image10.jpg'); padding: 20px; }
+    .p11 { background-position: left center; background-image: url('image11.jpg'); padding: 20px; }
+    .p12 { background-position: right center; background-image: url('image12.jpg'); padding: 20px; }
+    .p13 { background-position: left center; background-image: url('image13.jpg'); padding: 20px; }
+</style>
+
+
+<style>
+    /* 设置页面的主体内容居中显示 */
+    .centered-container {
+        width: 60%; /* 定义宽度，这里为屏幕宽度的80% */
+        margin: 0 auto; /* 上下边距为0，左右自动，以居中容器 */
+        padding: 50px; /* 内边距增加一些空间 */
+    }
+</style>
+
+
+<style>
+    /* 定义目标文本的初始和变化后的颜色 */
+    .highlight {
+        color: red; /* 变化后的颜色 */
+    }
+</style>
+
+
+<style>
+    /* 为平滑滚动设置 */
+    html {
+        scroll-behavior: smooth;
+    }
+    /* 文本高亮样式 */
+    .highlight {
+        color: rgb(239, 239, 11); /* 高亮颜色 */}
+   
+
+    
+</style>
+<script>
+    function highlightAndScroll(targetId) {
+        // 移除之前的高亮
+        document.querySelectorAll('.highlight').forEach(function(element) {
+            element.classList.remove('highlight');
+        });
+
+        // 平滑滚动到目标位置
+        document.querySelector(`#${targetId}`).scrollIntoView({
+            behavior: 'smooth'
+        });
+
+        // 添加高亮
+        document.getElementById(targetId).classList.add('highlight');
+    }
+</script>
 	</head>
-	<body>
-        <div class="image"> <img src="heading.GIF" alt="Description of the image" class="image"> </div>
+    
 
-    <a href="#chapter2">Week 2</a>
-    <h2 id="chapter2">HTML是如何起步的？</h2>
+
+</div>
+
+	<body>
+        <div class="container">
+            <img src="heading.GIF" alt="Description of the GIF" class="image" title="image display">
+      </div>
+      
+      <div class="links-container">
+        <a href="https://endless-summer.richardmille.com/">Website</a>
+        <a href="#target-section1" onclick="highlightAndScroll('target-section1'); return false;"class="center-link">Week 2</a>
+        <a href="#target-section2" onclick="highlightAndScroll('target-section2'); return false;"class="right-link">Week 3</a>
+        
+    
+    </div>
+
+   
+        <h2 id="target-section1">1.What was the first thing you paid attention to when interacting with the experience?</h2>
+    
+   
+    
         
 		<div>
             
         
-			<p>HTML5 是如何起步的？</p>.
+			<p class="custom-paragraph p1">
+                
+            Richard Meier's website is unique in that it requires viewers to adjust their browser size right at the start. A normally wide webpage does not directly begin the interactive experience; it must be switched to a long, vertical interface. During this resizing process, the scene in the display changes, with the sunset gradually rising to a midday feeling, and the light and shadow changing accordingly. This is the first action the website forces the viewer to undertake.
+            </p>
+
+            <h2> 2. Spend two minutes with the experience and create a list of each of your discrete actions.</h2>
+
+            <div class="custom-paragraph p2" >
+            <p>1. Adjust the webpage size to the appropriate starting interface, and observe the changes in the display.</p>
+            <p>2. Click the start button, and music begins to play.</p>
+            <p>3. Read two segments of text, press the next button.</p>
+            <p>4. The display then transitions to a 3D scene, or rather, it uses animation to create the effect of a 3D scene, which can be explored by dragging with the mouse.</p>
+            <p>5. There is a wheel at the bottom of the webpage, which, by dragging, can move to the next scene or return to the previous one.</p>
+            <p>6. Each scene is 3D and can be observed by dragging; the third scene requires clicking on a glowing object to interact and trigger an animation to continue.</p>
+            <p>7. Some scenes play a video when a button is pressed, and some have a prompt to increase the volume.</p>
+            <p>8. Continuously turn the dial to switch to the next scene and read the story.</p>
+        </div>
+
+
+            <h2>3. What part of the experience did you spend the most time engaging with?</h2>
+
 			
-			<p>HTML5 是 W3C 与 WHATWG 合作的结果。</p>
-			<p><span class="note">编者注：</span>W3C 指 World Wide Web Consortium，万维网联盟。</p>
-			<p><span class="note">编者注：</span>WHATWG 指 Web Hypertext Application Technology Working Group。</p>
-			<p>WHATWG 致力于 web 表单和应用程序，而 W3C 专注于 XHTML 2.0。在 2006 年，双方决定进行合作，来创建一个新版本的 HTML。</p>
-			<h2>为HTML建立的一些规则:</h2>
-		    <ul>
-			<li>新特性应该基于 HTML、CSS、DOM 以及 JavaScript。</li>
-			<li>减少对外部插件的需求（比如 Flash）</li>
-			<li>更优秀的错误处理</li>
-			<li>更多取代脚本的标记</li>
-			<li>HTML5 应该独立于设备</li>
-			<li>开发进程应对公众透明</li>
-		    </ul>
+			<p class="custom-paragraph p3">
+                The aspect where I spent the most time during this experience was using the mouse to drag the display, exploring the entire scene and story.</p>
+
+            <h2>4. What was the most common action in your two minute interaction with the experience?</h2>
+            <p class="custom-paragraph p4">The most common actions in these two minutes were dragging the display and turning the wheel.</p>
+
+            <h2>5. What is your impression of the intended primary goal of the interactive experience?</h2>
+            <p>The main goal of this interactive experience is to present a story through an immersive experience by letting the audience drag the display to watch the plot.
+
+            </p>
+
+            <h2>6. How does the interactive experience communicate this primary goal?</h2>
+            <p>The website initially asking viewers to adjust the webpage size reduces the viewer's perspective, forcing them to drag the mouse to explore the entire scene, thus better understanding the content and atmosphere of the story conveyed.
+
+            </p>
+
+            <h2>6. How does the interactive experience communicate this primary goal?</h2>
+            <p>Viewers can switch story scenes by turning the wheel, and then interact with glowing, clickable objects to enhance the interactivity, appearing frequently enough in a two to three-minute experience to enhance the experience.</p>
+            
+            <h2>7. What is your impression of how the experience should be interacted with over time? (For how long and how many different times)</h2>
+            <p>The most common actions in these two minutes were dragging the display and turning the wheel.</p>
+
+            <h2>8. How does the interactive experience communicate how it should be interacted with over time?</h2>
+            <p>As time progresses, viewers can see different scenes and stories, and by interacting with the scenes, they can better feel the story and atmosphere.
+
+            </p>
+
+            
+                <h2 id="target-section2">9. What other media forms (digital or otherwise) does the experience reference?</h2>
+            
+
+           
+            <p>This experience utilizes digital animation to convey information.
+
+            </p>
+
+            <h2>10. What does this reference/s communicate to you about how you should act when engaging with your research experience?</h2>
+            <p>This reference conveyed how to enhance their interest in continuing to read and explore a long story through interaction, and by using interesting visual transformations to force viewers to minimize their browser, reducing their view and increasing the amount to see by dragging.</p>
+
+            <h2>11. What does this reference/s communicate to you about how you should feel when engaging with your research experience?</h2>
+            <p>This reference uses music and atmospheric design in animations to provide a more immersive experience, allowing viewers to feel the atmosphere and emotions conveyed by the story. The pace of interaction and animation is slow, allowing one to gradually enjoy a relaxing atmosphere.</p>
+
+            <h2>12. What is the most frustrating part of the interaction to you and what makes that part frustrating?</h2>
+            <p>1. Initially resizing the browser to make it smaller is not possible with all browsers; it works with Chrome but not Safari.</p>
+            <p>2. After minimizing the display, the visible area becomes very small, which may cause viewers to lose interest in continuing to watch.</p>
+            <p>3. The story is very long and takes a lot of time to view the entire interaction.</p>
+            
+            <h2>13. What is the most satisfying part of the interaction to you and what makes that part satisfying?</h2>
+            <p>1. The overall design and style of the website are very beautiful.</p>
+            <p>2. AThe music is very comfortable, allowing me to keep it running even if I'm not looking at the website.</p>
+            <p>3. Dragging the mouse to explore the scenes is very enjoyable and visually pleasing.</p>
+            
 		</div>
 	</body>
 </html>
