@@ -14,7 +14,7 @@
 		<meta charset="UTF-8">
 		<title>HTML</title>
 		<style type="text/css">
-			h2{background-color:#7b0f07;color: white ;text-align: center;padding: 30px;font-weight: bold;}
+			h2{background-color:#7b0f07;color: rgb(250, 250, 250) ;text-align: center;padding: 30px;font-weight: bold;}
             
 			.note{font-style: italic;font-weight: bold;}
 		
@@ -24,7 +24,7 @@
 <style>
     body{
         background-color: rgb(0, 0, 0);
-        color: rgb(255, 255, 255);
+        color: rgb(228, 0, 0);
     }
 </style>
 <style>
@@ -75,7 +75,7 @@
 
     @font-face {
         font-family: 'TitleFont';
-        src: url('font2.otf') format('opentype');
+        src: url('font6.ttf') format('opentype');
     }
 
     @font-face {
@@ -90,8 +90,8 @@
 
     h2 {
         font-family: 'TitleFont', sans-serif;
-        color: #f3e5b2;
-        font-size: 30px;
+        color: #151412;
+        font-size: 50px;
     }
 
     p {
@@ -103,95 +103,166 @@
 </style>
 
 <style>
-    /* 设置外围容器样式 */
+
     .links-container {
         display: flex;
-        justify-content: space-between; /* 使元素分散对齐 */
-        padding: 20px; /* 添加一些内边距 */
+        justify-content: space-between; 
+        padding: 20px;
     }
 
     .center-link {
-        margin-right: auto; /* 推动所有剩余空间到右边，使得该元素居中 */
+        margin-right: auto;
         margin-left: auto;
     }
 
     .right-link {
-        justify-self: flex-end; /* 对齐到容器的末端 */
+        justify-self: flex-end;
     }
 </style>
 
 <style>
-    /* 通用样式，所有段落共享 */
+    
     .custom-paragraph {
-        background-size: contain; /* 覆盖整个段落 */
-        background-repeat: no-repeat; /* 不重复背景图 */
-        margin-bottom: 10px; /* 段落间留有空隙 */
-        color: white; /* 为了可读性，假设背景较暗 */
+        background-size: contain; 
+        background-repeat: no-repeat;
+        margin-bottom: 10px; 
+        color: white;
     }
 
-    /* 为每个段落设置特定的背景图和内边距 */
+    
     .p1 { background-position: left center; background-image: url('1.png'); padding: 100px; }
     .p2 { background-position: right center; background-image: url('2.png'); padding: 20px; }
     .p3 { background-position: left center; background-image: url('3.png'); padding: 200px; }
     .p4 { background-position: right center; background-image: url('4.png'); padding: 200px; }
     .p5 { background-position: left center; background-image: url('5.png'); padding: 200px; }
-    .p6 { background-position: right center; background-image: url('image6.jpg'); padding: 20px; }
-    .p7 { background-position: left center;; background-image: url('image7.jpg'); padding: 20px; }
-    .p8 { background-position: right center; background-image: url('image8.jpg'); padding: 20px; }
-    .p9 { background-position: left center; background-image: url('image9.jpg'); padding: 20px; }
-    .p10 { background-position: right center; background-image: url('image10.jpg'); padding: 20px; }
-    .p11 { background-position: left center; background-image: url('image11.jpg'); padding: 20px; }
-    .p12 { background-position: right center; background-image: url('image12.jpg'); padding: 20px; }
-    .p13 { background-position: left center; background-image: url('image13.jpg'); padding: 20px; }
+    .p6 { background-position: right center; background-image: url('6.png'); padding: 200px; }
+    .p7 { background-position: left center;; background-image: url('7.png'); padding: 200px; }
+    .p8 { background-position: right center; background-image: url('8.png'); padding: 200px; }
+    .p9 { background-position: left center; background-image: url('9.png'); padding: 200px; }
+    .p10 { background-position: right center; background-image: url('10.png'); padding: 200px; }
+    .p11 { background-position: left center; background-image: url('11.png'); padding: 200px; }
+    .p12 { background-position: right center; background-image: url('12.png'); padding: 100px; }
+    .p13 { background-position: left center; background-image: url('13.png'); padding: 100px; }
 </style>
 
 
 <style>
-    /* 设置页面的主体内容居中显示 */
+    
     .centered-container {
-        width: 60%; /* 定义宽度，这里为屏幕宽度的80% */
-        margin: 0 auto; /* 上下边距为0，左右自动，以居中容器 */
-        padding: 50px; /* 内边距增加一些空间 */
+        width: 60%; 
+        margin: 0 auto; 
+        padding: 50px; 
     }
 </style>
 
 
 <style>
-    /* 定义目标文本的初始和变化后的颜色 */
+    
     .highlight {
-        color: red; /* 变化后的颜色 */
+        color: red; 
     }
 </style>
 
 
 <style>
-    /* 为平滑滚动设置 */
+    
     html {
         scroll-behavior: smooth;
     }
-    /* 文本高亮样式 */
+    
     .highlight {
-        color: rgb(239, 239, 11); /* 高亮颜色 */}
+        color: rgb(239, 239, 11); }
    
 
     
 </style>
+
+<style>
+   
+    html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+  
+
+   
+    .footer-gif {
+        display: block; 
+        margin: auto; 
+        width: auto; 
+    }
+</style>
+
+<style>
+
+
+    /* 底部导航条样式 */
+    .back-to-top-bar {
+        position: fixed; /* 固定位置 */
+        left: 0; /* 左边界对齐 */
+        right: 0; /* 右边界对齐 */
+        bottom: 0; /* 底部对齐 */
+        background-color: #333; /* 导航条的背景颜色 */
+        color: white; /* 文字颜色 */
+        text-align: center; /* 文字居中 */
+        padding: 10px 0; /* 上下10px的内边距，左右无内边距 */
+        font-size: 16px; /* 字体大小 */
+    }
+
+    /* 确保链接没有下划线且颜色继承 */
+    .back-to-top-bar a {
+        color: inherit; /* 继承文字颜色 */
+        text-decoration: none; /* 去除下划线 */
+    }
+</style>
+
+<style>
+  
+    .footer-bar {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #333; 
+        text-align: center;
+        padding: 10px 0; 
+        font-size: 16px;
+    }
+
+   
+    .footer-bar a {
+        color: white; 
+        text-decoration: none; 
+        transition: color 0.3s; 
+    }
+
+    
+    .footer-bar a:hover {
+        color: #79110a; /
+    }
+</style>
+
 <script>
     function highlightAndScroll(targetId) {
-        // 移除之前的高亮
+        
         document.querySelectorAll('.highlight').forEach(function(element) {
             element.classList.remove('highlight');
         });
 
-        // 平滑滚动到目标位置
+        
         document.querySelector(`#${targetId}`).scrollIntoView({
             behavior: 'smooth'
         });
 
-        // 添加高亮
+        
         document.getElementById(targetId).classList.add('highlight');
     }
 </script>
+
+
+
 	</head>
     
 
@@ -212,7 +283,7 @@
     </div>
 
    
-        <h2 id="target-section1">1.What was the first thing you paid attention to when interacting with the experience?</h2>
+        <h2 id="target-section1">1. What was the first thing you paid attention to when interacting with the experience?</h2>
     
    
     
@@ -249,23 +320,20 @@
             <p class="custom-paragraph p4">The most common actions in these two minutes were dragging the display and turning the wheel.</p>
 
             <h2>5. What is your impression of the intended primary goal of the interactive experience?</h2>
-            <p>The main goal of this interactive experience is to present a story through an immersive experience by letting the audience drag the display to watch the plot.
+            <p class="custom-paragraph p5">The main goal of this interactive experience is to present a story through an immersive experience by letting the audience drag the display to watch the plot.
 
             </p>
 
             <h2>6. How does the interactive experience communicate this primary goal?</h2>
-            <p>The website initially asking viewers to adjust the webpage size reduces the viewer's perspective, forcing them to drag the mouse to explore the entire scene, thus better understanding the content and atmosphere of the story conveyed.
+            <p class="custom-paragraph p6">The website initially asking viewers to adjust the webpage size reduces the viewer's perspective, forcing them to drag the mouse to explore the entire scene, thus better understanding the content and atmosphere of the story conveyed.
 
             </p>
 
-            <h2>6. How does the interactive experience communicate this primary goal?</h2>
-            <p>Viewers can switch story scenes by turning the wheel, and then interact with glowing, clickable objects to enhance the interactivity, appearing frequently enough in a two to three-minute experience to enhance the experience.</p>
-            
             <h2>7. What is your impression of how the experience should be interacted with over time? (For how long and how many different times)</h2>
-            <p>The most common actions in these two minutes were dragging the display and turning the wheel.</p>
+            <p class="custom-paragraph p7">The most common actions in these two minutes were dragging the display and turning the wheel.</p>
 
             <h2>8. How does the interactive experience communicate how it should be interacted with over time?</h2>
-            <p>As time progresses, viewers can see different scenes and stories, and by interacting with the scenes, they can better feel the story and atmosphere.
+            <p class="custom-paragraph p8">As time progresses, viewers can see different scenes and stories, and by interacting with the scenes, they can better feel the story and atmosphere.
 
             </p>
 
@@ -274,25 +342,42 @@
             
 
            
-            <p>This experience utilizes digital animation to convey information.
+            <p class="custom-paragraph p9">This experience utilizes digital animation to convey information.
 
             </p>
 
             <h2>10. What does this reference/s communicate to you about how you should act when engaging with your research experience?</h2>
-            <p>This reference conveyed how to enhance their interest in continuing to read and explore a long story through interaction, and by using interesting visual transformations to force viewers to minimize their browser, reducing their view and increasing the amount to see by dragging.</p>
+            <p class="custom-paragraph p10">This reference conveyed how to enhance their interest in continuing to read and explore a long story through interaction, and by using interesting visual transformations to force viewers to minimize their browser, reducing their view and increasing the amount to see by dragging.</p>
 
             <h2>11. What does this reference/s communicate to you about how you should feel when engaging with your research experience?</h2>
-            <p>This reference uses music and atmospheric design in animations to provide a more immersive experience, allowing viewers to feel the atmosphere and emotions conveyed by the story. The pace of interaction and animation is slow, allowing one to gradually enjoy a relaxing atmosphere.</p>
+            <p class="custom-paragraph p11">This reference uses music and atmospheric design in animations to provide a more immersive experience, allowing viewers to feel the atmosphere and emotions conveyed by the story. The pace of interaction and animation is slow, allowing one to gradually enjoy a relaxing atmosphere.</p>
 
             <h2>12. What is the most frustrating part of the interaction to you and what makes that part frustrating?</h2>
+
+            <div class="custom-paragraph p12">
             <p>1. Initially resizing the browser to make it smaller is not possible with all browsers; it works with Chrome but not Safari.</p>
             <p>2. After minimizing the display, the visible area becomes very small, which may cause viewers to lose interest in continuing to watch.</p>
             <p>3. The story is very long and takes a lot of time to view the entire interaction.</p>
+        </div>
             
             <h2>13. What is the most satisfying part of the interaction to you and what makes that part satisfying?</h2>
+            <div class="custom-paragraph p13">
             <p>1. The overall design and style of the website are very beautiful.</p>
             <p>2. AThe music is very comfortable, allowing me to keep it running even if I'm not looking at the website.</p>
             <p>3. Dragging the mouse to explore the scenes is very enjoyable and visually pleasing.</p>
+        </div>
+
+        
+        <img src="bottom.GIF" class="footer-gif" alt="Centered GIF at bottom">
+
+        
+    
+        <!-- 底部导航条，包含返回顶部的超链接 -->
+        <div class="footer-bar">
+            <a href="#top">Back to Top</a>
+        </div>
+
+        
             
 		</div>
 	</body>
